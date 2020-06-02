@@ -5,6 +5,18 @@ checkYes = ['Yes','yes','Да','да']
 checkYesNo = checkNo + checkYes
 
 
+def checkFloat():
+    checkCicle = 0
+    while checkCicle == 0:
+        try:
+            floAt = float(input(' >>>>>   '))
+            checkCicle = 1
+        except:
+            print('Вы ввели не число, повторите ввод!')
+            checkCicle =0
+    return floAt
+
+
 while cikl == 1:
     cicleCount = 0
     while cicleCount == 0:
@@ -15,8 +27,10 @@ while cikl == 1:
             print('\n', 'Вы ввели некорректный ответ. Повторите пожалуйста ввод!')
             cicleCount = 0
     if YesNo in checkYes:
-        storona1 = int(input('Введите первую сторону >>>'))
-        storona2 = int(input('Введите вторую сторону >>>'))
+        print('Введите размер первой стороны. ')
+        storona1 = checkFloat()
+        print('Введите размер второй стороны. ')
+        storona2 = checkFloat()
         Ploshad = storona1 * storona2
         print('Площадь равна', Ploshad)
     elif YesNo in checkNo:
