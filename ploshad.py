@@ -27,12 +27,20 @@ while cikl == 1:
             print('\n Вы ввели некорректный ответ. Повторите пожалуйста ввод!')
             cicleCount = 0
     if YesNo in checkYes:
-        print('Введите размер первой стороны. ', end=' ')
-        storona1 = checkFloat()
-        print('Введите размер второй стороны. ', end=' ')
-        storona2 = checkFloat()
-        Ploshad = storona1 * storona2
-        print('Площадь равна', Ploshad)
+        print('Введите высоту окна. ', end=' ')
+        windowHeight = checkFloat()
+        print('Введите ширину окна. ', end=' ')
+        windowWidth = checkFloat()
+        windowArea = windowHeight * windowWidth
+        print('Площадь окна равна', windowArea)
+        strWindowHeight = '  Высота окна  ' + str(windowHeight) + '\n'
+        strWindowWidth = '  Ширина окна  ' + str(windowWidth) + '\n'
+        strWindowArea = '  Площадь окна  ' + str(windowArea) + '\n'
+        fileOpen = open('area.txt', 'w')
+        fileOpen.write(strWindowHeight)
+        fileOpen.write(strWindowWidth)
+        fileOpen.write(strWindowArea)
+        fileOpen.close()
     elif YesNo in checkNo:
         print('-= Конец прогрвммы, выход. =-')
         cikl = 0
