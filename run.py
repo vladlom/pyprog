@@ -42,11 +42,11 @@ while cikl == 1:
         windowWidth = checkFloat(count)
         windowArea = windowHeight[0] * windowWidth[0]
         print('Площадь ' + strCount + '-го окна равна', windowArea)
-        strWindowHeight = 'Высота ' + strCount + '-го окна =' + \
+        strWindowHeight = 'Высота ' + strCount + '-го окна = ' + \
                 str(windowHeight[0]) + '\n'
-        strWindowWidth = 'Ширина ' + strCount + '-го окна =' + \
+        strWindowWidth = 'Ширина ' + strCount + '-го окна = ' + \
                 str(windowWidth[0]) + '\n'
-        strWindowArea = 'Площадь ' + strCount + '-го окна =' + \
+        strWindowArea = 'Площадь ' + strCount + '-го окна = ' + \
                 str(windowArea) + '\n\n'
         if count == 1:
             fileOpen = open('area.txt', 'w')
