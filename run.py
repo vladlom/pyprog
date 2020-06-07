@@ -9,3 +9,14 @@ projectName = dateName + areaBodyR
 fileOpen = open(projectName + '.db', 'w')
 fileOpen.write(projectName)
 fileOpen.close()
+
+
+
+
+areaBodyR = int(areaBodyR)
+areaBodyR += 1
+areaBodyR = str(areaBodyR)
+areaBody = open('area_body.db', 'w')
+areaBody.write(areaBodyR)
+areaBody.close()
+
