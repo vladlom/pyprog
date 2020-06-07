@@ -49,9 +49,9 @@ while cikl == 1:
         strWindowArea = 'Площадь ' + strCount + '-го окна = ' + \
                 str(windowArea) + '\n\n'
         if count == 1:
-            fileOpen = open('area.txt', 'w')
+            fileOpen = open('area_window.db', 'w')
         else:
-            fileOpen = open('area.txt', 'a')
+            fileOpen = open('area_window.db', 'a')
         fileOpen.write(strWindowHeight)
         fileOpen.write(strWindowWidth)
         fileOpen.write(strWindowArea)
