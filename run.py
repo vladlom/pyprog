@@ -22,8 +22,6 @@ fileOpen.write('Name - ' + name + '\n')
 fileOpen.write('Surname - ' + surname + '\n')
 fileOpen.write('Address - ' + address + '\n')
 fileOpen.write('Phone number - ' + phone + '\n')
-
-
 fileOpen.close()
 
 
